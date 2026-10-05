@@ -14,10 +14,6 @@ Draft up revisions of live, published content. The live content doesn't change u
 
 On a busy site you can't afford to make changes to *live*, *published* posts without reviewing and approving them first. **Revisionize** clones your post, page or CPT to a draft that gives you the freedom to tweak, edit and experiment with the content. Preview your drafted changes and/or [share the preview](https://wordpress.org/plugins/public-post-preview/) with a 3rd party to approve the changes. When you're happy, publish the revision, which will copy your content changes to the original post. Alternatively, schedule the revision to publish your content at a specific time. 
 
-= Official Addons =
-
-Visit [revisionize.pro](https://revisionize.pro) to add functionality that makes Revisionize even more powerful. 
-
 = Compatible with =
 
 * [Advanced Custom Fields](https://wordpress.org/plugins/advanced-custom-fields/)
