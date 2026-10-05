@@ -1,9 +1,9 @@
 === Revisionize ===
 Contributors: jamiechong
-Tags: revision, schedule, cron, staging, variation, publishing, content, stage
+Tags: revision, schedule, staging, publishing, content
 Requires at least: 4.6
-Tested up to: 5.2.2
-Stable tag: trunk
+Tested up to: 7.1
+Stable tag: 2.3.5
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -42,6 +42,16 @@ Please post in the support section for help before leaving a negative review!
 5. The original post is kept around as a revision just in case you want to revert back to the way things were. 
 
 == Changelog ==
+
+= 2.3.5 =
+* Fix. Backslashes in post content and custom fields were stripped when creating or publishing a revision. This corrupted block editor markup (for example `\u002d` in block attributes), code snippets and JSON stored in post meta.
+* Fix. PHP 8.2 deprecation notices in the settings code.
+* Improvement. Escape output in the admin UI and settings page.
+* Improvement. Uploaded add-on file names are sanitized so the file stays inside the add-ons folder.
+* Improvement. Tested up to WordPress 7.1.
+
+= 2.3.4 =
+* Improvement. Reduce the add-on list request timeout to 1 second and cache failures longer (props thefrosty).
 
 = 2.3.3 =
 * Fix. Remove PHP Notice on the admin menu editor screen
