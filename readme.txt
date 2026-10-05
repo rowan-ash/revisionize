@@ -41,7 +41,7 @@ Please post in the support section for help before leaving a negative review!
 
 = 2.3.5 =
 * Fix. Backslashes in post content and custom fields were stripped when creating or publishing a revision. This corrupted block editor markup (for example `\u002d` in block attributes), code snippets and JSON stored in post meta.
-* Fix. PHP 8.2 deprecation notices in the settings code.
+* Fix. PHP 8.1 and 8.2 deprecation notices in the settings code.
 * Improvement. Escape output in the admin UI and settings page.
 * Improvement. Uploaded add-on file names are sanitized so the file stays inside the add-ons folder.
 * Improvement. Tested up to WordPress 7.1.

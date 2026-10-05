@@ -269,12 +269,18 @@ function get_setting($key, $default='', $multisite=false) {
 
 function set_setting($key, $value) {
   $settings = get_option('revisionize_settings');  
+  if (!is_array($settings)) {
+    $settings = array();
+  }
   $settings[$key] = $value;
   update_option('revisionize_settings', $settings);  
 }
 
 function remove_setting($keys, $multisite=false) {
   $settings = $multisite ? get_site_option('revisionize_network_settings') : get_option('revisionize_settings');    
+  if (!is_array($settings)) {
+    $settings = array();
+  }
   if (!is_array($keys)) {
     $keys = array($keys);
   }
